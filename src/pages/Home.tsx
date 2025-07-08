@@ -73,9 +73,11 @@ const Home = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button size="lg" className="bg-gradient-primary hover-lift group">
-                  Explore My Work
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                <Button size="lg" asChild className="bg-gradient-primary hover-lift group">
+                  <Link to="/work">
+                    Explore My Work
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild className="hover-lift">
                   <a 
